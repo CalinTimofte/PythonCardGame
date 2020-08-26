@@ -39,3 +39,12 @@ class Game:
             p3.append(self.cards.pop())
             p4.append(self.cards.pop())
         self.players = [Player(i) for i in [p1, p2, p3, p4]]
+
+
+g = Game()
+g.shuffle()
+g.spread_cards()
+for i in g.players:
+    i.show_hand()
+    print()
+    print()
