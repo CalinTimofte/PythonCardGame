@@ -11,6 +11,10 @@ class Player:
     def __init__(self, cards):
         self.cards = cards
 
+    def show_hand(self):
+        for i in self.cards:
+            print(i.number, i.suit)
+
 
 class Game:
     def __init__(self):
